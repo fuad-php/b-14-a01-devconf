@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -33,13 +34,15 @@
         </div>
     </header>
     <section class="hero-bg-image">
-        <div class="container">
+        <div class="hero-overlay">
             <div class="hero-content">
-                <h1>Code. 
-                    <em>Connect.</em> 
-                    Create</h1>
+                <h2>Code. <br>
+                   <em>Connect.</em> <br> 
+                   Create</h2>
                 <p>Join 4000+ engineers, founders, and builders at the premier developer conference of 2026. Three days of cutting-edge talks, hands-on workshops, and meaningful connections.</p>
-                <button class="common-btn">Register Now</button>
+                <div class="hero-cta">
+                    <button class="common-btn">Register Now</button>
+                </div>
             </div>
 
         </div>
@@ -136,14 +139,69 @@
     <!-- secure your spot end -->
 
     <!-- AI section start -->
-    <section>
+    <section class="devconf-cta">
+        <div class="container">
+            <span class="cta-tag">DEVCONF 2026</span>
 
+            <h2>Shape the Future of Technology</h2>
+
+            <p>
+                Join thousands of developers, engineers, tech leaders, and innovators
+                from around the world at DevConf 2026. Discover cutting-edge
+                technologies, attend hands-on workshops, and connect with the global
+                developer community.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">Register Now</a>
+                <a href="#" class="btn-secondary">Become a Speaker</a>
+            </div>
+
+            <div class="cta-stats">
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Expert Speakers</p>
+                </div>
+
+                <div class="stat">
+                    <h3>30+</h3>
+                    <p>Technical Sessions</p>
+                </div>
+
+                <div class="stat">
+                    <h3>5K+</h3>
+                    <p>Developers</p>
+                </div>
+
+                <div class="stat">
+                    <h3>20+</h3>
+                    <p>Countries</p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- AI section end -->
 
 
     <!-- footer start -->
-    <footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./assets/logo-mini.png" alt="logo">
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="footer-copy">&copy; 2026 DevConf. All rights reserved.</p>
+        </div>
 
     </footer>
     <!-- footer end -->

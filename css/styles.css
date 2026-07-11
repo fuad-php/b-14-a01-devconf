@@ -10,19 +10,19 @@ body{
 .navbar{
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    vertical-align: middle;
-    
+    justify-content: space-between;  
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .menu ul{
     list-style: none;
     display: flex;
+    gap: 20px;
 }
 .menu ul li a{
     text-decoration: none;
@@ -38,25 +38,45 @@ body{
     font-weight: bold;
     border: none;
 }
+
 .hero-bg-image{
-    background-image: url('../assets/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
+   background: url('../assets/banner.jpg') center center/cover no-repeat;
+    min-height: 90vh;
+    position: relative;
     display: flex;
     align-items: center;
-    overlay: rgba(24, 2, 2, 0.5);
+    justify-content: center;
 
 }
-.hero-bg-image .hero-content{
+.hero-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+.hero-content{
     color: white;
     text-align: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 580px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    vertical-align: -webkit-baseline-middle;
+}
+
+.hero-content h2{
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.hero-content h2 em {
+    font-style: italic;
+}
+.hero-cta{
+    margin-top: 40px;
 }
 
 .meet-the-speakers{
@@ -75,8 +95,8 @@ body{
 }
 
 .speaker-card{
-    border: 2px dotted #ddd;
-    border-radius: 25px 25px 0px 0px;
+    border: 2px solid #ddd;
+    border-radius: 10px 10px 0px 0px;
     text-align: left;
 }
 .speaker-card span, .speaker-card h3, .speaker-card p{
@@ -86,6 +106,7 @@ body{
 .speaker-card img{
     width: 100%;
     height: auto;
+    border-radius: 10px 10px 0px 0px;
 }
 .speaker-badge{
     color: #2563EB;
@@ -140,4 +161,121 @@ body{
 }
 .price-unit{
     color: #888888 ;
+}
+/* AI generated section css */
+.devconf-cta {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.devconf-cta .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cta-tag {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.devconf-cta h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.devconf-cta p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.btn-primary,
+.btn-secondary {
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #3b82f6;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #2563eb;
+}
+
+.btn-secondary {
+    border: 1px solid #475569;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.cta-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+}
+
+.stat {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.stat h3 {
+    font-size: 2rem;
+    color: #60a5fa;
+    margin-bottom: 8px;
+}
+
+.stat p {
+    margin: 0;
+    color: #cbd5e1;
+}
+/* AI generated section css end */
+
+.footer{
+    margin-top: 100px;
+    background-color: #0D1B2A;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
