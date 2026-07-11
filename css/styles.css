@@ -281,8 +281,16 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.footer-content ul{
-    list-style: none;
+
+.footer-social ul{
     display: flex;
     gap: 20px;
+}
+.footer-social ul li{
+    list-style: none;
+    padding: 10px
+}
+.footer-social ul li a{
+    text-decoration: none;
+    color: white;
 }
